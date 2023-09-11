@@ -1,0 +1,65 @@
+*{
+    font-family: sans-serif,Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+}
+h1{
+    text-align: center;
+}
+#p1{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+body{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 0, 0.6),
+        rgba(0, 0, 255, 0.8)
+    ), url("image.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+    margin:0 auto;
+    /* border: 2px solid salmon; */
+    background-color: bisque;
+}
+.lastresult{
+    text-align: center;
+}
+.form input[type="number"]{
+    margin-left: 0;
+    margin-right: 10px;
+    width: 1500px;
+}
+.guessSubmit:hover{
+    size:20px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+.form{
+    display: flex;
+}
+.loworhi{
+    color: aliceblue;
+}
+@media(max-width:700px){
+    .form{
+        display: grid;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .guessSubmit{
+        text-align: left;
+        max-width: 300px;
+    }
+    .guessField{
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+.lastresult{
+    color:white;
+    padding: 3px;
+}
